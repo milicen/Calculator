@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 100px repeat(4, 1fr);
+	width: 500px;
+	height: 400px;
+	margin: 250px auto;
+
+}
+
+textarea{
+	grid-column-start: 1;
+	grid-column-end: 6;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	resize: none;
+	padding: 10px 10px;
+}
+
+#total{
+	grid-column: 4 / 5;
+	grid-row: 4 / 6;
+}
